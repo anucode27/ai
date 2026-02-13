@@ -1,0 +1,27 @@
+import random
+def get_response(message):
+	message=message.lower()
+	greeting=["hi","hello","hey","how are you"]
+	farewlls=["bye","good bye","good night","see you ","take care"]
+	compliments=["nice","beautifyl","greet","good"]
+	if any(word in message for word in greeting):
+		return "chat bot: Hello how can i help you"
+	elif any(word in message for word in farewlls):
+		return "chat bot: Good bye have a nice day"
+	elif any(word in message for word in compliments):
+		return "chat bot: thank you i am here to assist you"
+	else:
+		return "chabot:sorry i cant understand plase rephrase it "
+def main():
+	print("chat bot=hello i am your assistant")
+	while True:
+		user_input=input("you= ")
+		if user_input.lower()=="bye":
+			print("chat bot:good bye have a nice day ")
+			break
+			
+		response=get_response(user_input)
+		print(response)
+		
+if __name__ == "__main__":
+	main()
