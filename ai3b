@@ -1,0 +1,24 @@
+# List Methods
+
+num = [1, 2, 3, 4, 5]
+prime = [2, 3, 5, 7, 11]
+
+print("Numbers:", num)
+print("Prime:", prime)
+
+# Append
+prime.append(13)
+print("After appending 13 into prime:", prime)
+
+# Extend
+num.extend(prime)
+print("After adding prime numbers into numbers:", num)
+
+# Pop (removes last element)
+print("Popped element:", num.pop())
+print("After pop:", num)
+
+# Clear
+prime.clear()
+print("After clearing prime list:", p
+rime)
