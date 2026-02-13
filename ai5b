@@ -1,0 +1,38 @@
+# Initialize empty lists for the matrix and its transpose
+matrix1 = []
+transpose = []
+
+# Get matrix dimensions from the user
+r = int(input("Enter matrix row size: "))
+c = int(input("Enter matrix column size: "))
+
+print(f"Enter {r * c} elements:")
+
+# Input the matrix elements
+for i in range(r):
+    a = []
+    for j in range(c):
+        a.append(int(input()))
+    matrix1.append(a)
+
+# Display the original matrix
+print("\nGiven matrix:")
+for i in range(r):
+    for j in range(c):
+        print(matrix1[i][j], end=" ")
+    print()
+
+# Logic to create the Transpose
+# We iterate over columns first to turn them into rows
+for i in range(c):
+    a = []
+    for j in range(r):
+        a.append(matrix1[j][i])
+    transpose.append(a)
+
+# Display the transposed matrix
+print("\nTranspose of matrix:")
+for i in range(c):
+    for j in range(r):
+        print(transpose[i][j], end=" ")
+    print()
