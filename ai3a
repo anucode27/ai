@@ -1,0 +1,31 @@
+# List Operations
+
+numbers = [11, 22, 33, 44, 55]
+prime = [2, 3, 5, 7, 11, 13]
+
+# Type of list
+print("Type of numbers:", type(numbers))
+
+# Printing both lists
+print("Numbers:", numbers)
+print("Prime:", prime)
+
+# Length of list
+print("Length of numbers:", len(numbers))
+
+# Concatenation
+print("New list =", numbers + prime)
+
+# Membership
+if 11 in numbers:
+    print("Yes 11 is in numbers")
+
+# Iteration
+print("Prime numbers:")
+for i in prime:
+    print(i)
+
+# Slicing
+print("Prime numbers:", prime[:])
+print("Prime numbers in reverse order:", prim
+e[::-1])
